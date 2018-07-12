@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gurb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+        <div class="row header">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-2"><a href="#"><img src="images/home-icon.png"></a></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 headerLink"><a href="#">Dashboard</a><a href="#" class="active">Settings</a><a href="#">Logout</a></div>
+        </div>
+        <div class="row settingCont">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                    <div class="row onboardContainer">                            
+                            <div class="budgetUpdate">
+                                <h4 class="align-left">Enter your monthly budget</h4>
+                                <p>To minimize abuse, we only allow users to adjust their monthly budgets once every 3 months.</p>
+                                <input class="budgetInput" type="text" placeholder="$ 700.00" name="budget"/>
+                                <button class="updateButt">Update Budget</button>
+                            </div>        
+                    </div>
+            </div>
+
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-0">
+                    <div class="row onboardContainer">                            
+                            <div class="budgetUpdate">
+                                <h4>Activate your subscription</h4>            
+                                    <form>
+                                    <div class="payOptBox">
+                                    <span class="payHeader"><img src="images/cards.jpg"></span>
+                                        <span class="payForm">
+                                        <label>Card Number</label>
+                                        <input class="payInput" type="password" placeholder=".... .... .... ...." name="cardNo"/>
+                                        <label>Expiration Date (MM/YY)</label>
+                                        <input class="payInput" type="text" placeholder="MM/YY" name="ExpDate"/>
+                                        </span>
+                                    </div> 
+                                        <button class="updateButt">Update Credit Card</button>
+                                    </form>
+                                     
+                            </div>        
+                    </div>
+            </div>
+        </div>
+        <div class="row deleteAccArea">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <p>Please confirm intention to delete account by typing “DELETE” in the text field and then hit the button</p>
+            <input class="inputBox" type="text" placeholder="" name="account"/>
+            <button class="deleteAccButt">Delete Account</button>
+            </div>
+        </div>
+    
+    
+</div>
+</body>
+</html>

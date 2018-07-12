@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gurb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header dashBoard">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-2">
+                <a href="#">
+                    <img src="images/home-icon.png">
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 headerLink">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+        <div class="row dashBoardCont">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 leftCont">
+                <h2>June 2018</h2>
+                <ul class="infoBox">
+                    <li>
+                        <h4>Progress</h4>
+                        <span class="contTxt contTxtPrice">$500/$700</span>
+                        <span class="contTxt">Average Spend $15/Day</span>
+                        <span class="contTxt">
+                            <span class="contBlueTxt">15%</span> less than May</span>
+                        <button class="shareButt">Share</button>
+                        <span class="contTxt">3 Days to go</span>
+                    </li>
+                    <li data-toggle="modal" data-target="#myModal">
+                        <h4>Most visited merchant</h4>
+                        <span class="infoImg">
+                            <img src="images/starbucks-b.png">
+                        </span>
+                        <span class="infoName">Starbucks</span>
+                        <span class="infoPrice">9 times</span>
+                    </li>
+                    <li data-toggle="modal" data-target="#myModal">
+                        <h4>Where you spent the most</h4>
+                        <span class="infoImg">
+                            <img src="images/tradejokes-b.png">
+                        </span>
+                        <span class="infoName">Starbucks</span>
+                        <span class="infoPrice">$200.31</span>
+                    </li>
+                    <li data-toggle="modal" data-target="#myModal">
+                        <h4>Where you spent the least</h4>
+                        <span class="infoImg">
+                            <img src="images/kfc-b.png">
+                        </span>
+                        <span class="infoName">Starbucks</span>
+                        <span class="infoPrice">$3.80</span>
+                    </li>
+                </ul>
+
+
+                <div class="spendingBox">
+                    <h4>Spending habbit in 2018</h4>
+                    <p>Monthly budget $700</p>
+                    <ul class="monthBudget">
+                        <li>
+                            <span class="monthName">JAN</span>
+                            <span class="monthNo">1</span>
+                            <span class="monthPrice">$800</span>
+                            <span class="heart">
+                                <img src="images/orng-heart.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="monthName">FEB</span>
+                            <span class="monthNo">2</span>
+                            <span class="monthPrice">$640</span>
+                            <span class="heart">
+                                <img src="images/green-heart.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="monthName">MAR</span>
+                            <span class="monthNo">3</span>
+                            <span class="monthPrice">$450</span>
+                            <span class="heart">
+                                <img src="images/green-heart.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="monthName">APR</span>
+                            <span class="monthNo">4</span>
+                            <span class="monthPrice">$450</span>
+                            <span class="heart">
+                                <img src="images/orng-heart.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="monthName">MAY</span>
+                            <span class="monthNo">5</span>
+                            <span class="monthPrice">$450</span>
+                            <span class="heart">
+                                <img src="images/green-heart.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="monthName">Jun</span>
+                            <span class="monthNo">6</span>
+                            <span class="monthPrice">$450</span>
+                            <span class="heart">
+                                <img src="images/orng-heart.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="monthName">JUL</span>
+                            <span class="monthNo">7</span>
+                            <span class="monthPrice">$450</span>
+                            <span class="heart">
+                                <img src="images/dash.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="monthName">AUG</span>
+                            <span class="monthNo">8</span>
+                            <span class="monthPrice">$450</span>
+                            <span class="heart">
+                                <img src="images/dash.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="monthName">SEP</span>
+                            <span class="monthNo">9</span>
+                            <span class="monthPrice">$450</span>
+                            <span class="heart">
+                                <img src="images/dash.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="monthName">OCT</span>
+                            <span class="monthNo">10</span>
+                            <span class="monthPrice">$450</span>
+                            <span class="heart">
+                                <img src="images/dash.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="monthName">NOV</span>
+                            <span class="monthNo">11</span>
+                            <span class="monthPrice">$450</span>
+                            <span class="heart">
+                                <img src="images/dash.png">
+                            </span>
+                        </li>
+                        <li>
+                            <span class="monthName">DEC</span>
+                            <span class="monthNo">12</span>
+                            <span class="monthPrice">$450</span>
+                            <span class="heart">
+                                <img src="images/dash.png">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 rightBox">
+                <h3>Transactions for June</h3>
+                <ul class="tranList scrollbar" id="style-4">
+                    <li>
+                        <div class="compimg">
+                            <img src="images/starbox.png">
+                        </div>
+                        <div class="compinfo">
+                            <span>$5.65</span>
+                            <span>Starbucks</span>
+                            <span class="location">Brighton Ave and Holloway Ave</span>
+                            <span>2018-06-23</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="compimg">
+                            <img src="images/kfc.png">
+                        </div>
+                        <div class="compinfo">
+                            <span>$3.80</span>
+                            <span>KFC</span>
+                            <span class="location">2378 New Bern Avenue</span>
+                            <span>2018-06-23</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="compimg">
+                            <img src="images/foodlion.png">
+                        </div>
+                        <div class="compinfo">
+                            <span>$5.65</span>
+                            <span>FoodLion</span>
+                            <span class="location">Brighton Ave and Holloway Ave</span>
+                            <span>2018-06-23</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="compimg">
+                            <img src="images/trade-jokes.png">
+                        </div>
+                        <div class="compinfo">
+                            <span>$5.65</span>
+                            <span>Trader Joe’s</span>
+                            <span class="location">Brighton Ave and Holloway Ave</span>
+                            <span>2018-06-23</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="compimg">
+                            <img src="images/h-mart.png">
+                        </div>
+                        <div class="compinfo">
+                            <span>$5.65</span>
+                            <span>H Mart</span>
+                            <span class="location">Brighton Ave and Holloway Ave</span>
+                            <span>2018-06-23</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="compimg">
+                            <img src="images/starbox.png">
+                        </div>
+                        <div class="compinfo">
+                            <span>$5.65</span>
+                            <span>Starbucks</span>
+                            <span class="location">Brighton Ave and Holloway Ave</span>
+                            <span>2018-06-23</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="compimg">
+                            <img src="images/pho-boy.png">
+                        </div>
+                        <div class="compinfo">
+                            <span>$5.65</span>
+                            <span>Pho Boy</span>
+                            <span class="location">Brighton Ave and Holloway Ave</span>
+                            <span>2018-06-23</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="compimg">
+                            <img src="images/taverna.png">
+                        </div>
+                        <div class="compinfo">
+                            <span>$5.65</span>
+                            <span>Taverna</span>
+                            <span class="location">Brighton Ave and Holloway Ave</span>
+                            <span>2018-06-23</span>
+                        </div>
+                    </li>
+                </ul>
+                <button class="moreButt">More</button>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="row modalBox">
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                        <span class="infoImg">
+                                            <img src="images/tradejokes-b.png">
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 imageInfo">
+                                        <h2>KFC</h2>
+                                        <p>$3.00</p>
+                                        <p>2018-06-17</p>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <p>
+                                            <strong>We think this may be a food or grocerry expense.</strong>
+                                        </p>
+                                        <p>Amount spend on grocerry anf food.</p>
+                                        <p>
+                                            <input type="text" />
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                        <button type="button" class="btn btn-default modButton" data-dismiss="modal">Yes</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <button type="button" class="btn btn-default modButton" data-dismiss="modal">No</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

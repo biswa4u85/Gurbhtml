@@ -1,0 +1,815 @@
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotoblack';
+    src: url('fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$primaryFont:'robotoregular';
+$secondryFont:'robotoblack';
+$primaryColor:#2A3A3B;
+$secondryColor:#3DD9D4;
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'robotoregular';
+    background: #FBFBFB;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.scrollbar{	
+	height:67vh;	
+	overflow-y: scroll;	
+}
+#style-4::-webkit-scrollbar-track{	
+	background-color: #fff;
+}
+
+#style-4::-webkit-scrollbar{
+	width:4px;
+	background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb{
+	background-color: #c5c5c5;	
+}
+
+
+.header{
+    display: block;
+    padding:20px 0;
+    @media screen and (max-width:414px){
+        padding-bottom: 0px;
+    }
+    .centLogo{        
+        @media screen and (max-width:414px){
+            text-align: center;
+        }
+    }
+    .headerLink{
+        text-align: right;
+        font-size: 14px;
+        color: $primaryColor;        
+    }
+    .headerLink a{
+        text-decoration: none;        
+        display: inline-block;
+        margin: 0 20px;
+        color: $primaryColor;
+        @media screen and (max-width:414px){
+            padding:5px 0 0;
+            margin: 0 15px 20px 0;
+        }
+    }
+    .headerLink a:hover{
+        color:$secondryColor;
+    }
+    .headerLink a.active{
+        color:$primaryColor;
+        border-bottom: solid 2px $secondryColor;
+        font-family: $secondryFont;
+    }
+}
+.dashBoard{
+    // padding-bottom: 0px!important; 
+}
+
+.contentArea{
+    display: block;
+    padding-bottom: 100px;
+    @media screen and (max-width:414px){
+        padding: 10px 0 25px;
+        border-bottom: solid 1px #e5eeec;
+        margin-bottom: 25px;
+    }
+    h2{
+        font-size:36px;
+        color: $primaryColor;
+        font-family: $secondryFont;
+        @media screen and (max-width:414px){
+            font-size: 26px;
+            text-align: center;
+        }
+    }
+    h3{
+        font-size: 30px;
+        color: $primaryColor;
+        font-family: $secondryFont;
+        @media screen and (max-width:414px){
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+    p{
+        font-size: 16px;
+        color: $primaryColor;
+        @media screen and (max-width:414px){
+            font-size: 14px;
+            text-align: center;
+        }
+    } 
+    .kitchenTxt{
+        margin-top:136px;
+        @media screen and (max-width:414px){
+            margin-top:0;
+        }
+    }
+    .signUpButt{
+        margin-top:50px;
+        @media screen and (max-width:414px){
+            margin-top:15px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    }  
+    .conviTxt{
+        margin-top:80px;
+        @media screen and (max-width:414px){
+            margin-top:0;
+        }
+    } 
+    .fourtxt{
+        font-family: $secondryFont;
+        font-size: 200px;
+        color: $secondryColor;
+        line-height: 144px;
+    }
+    .dollorTxt{
+        font-family: $secondryFont;
+        font-size:48px;
+        color: $secondryColor;
+        display: block;
+    }
+    .monthTxt{
+        font-family: $secondryFont;
+        font-size:48px;
+        color: $secondryColor;
+    }
+}
+.footerButt{
+    text-align: center;
+}
+
+    .spsFooter{
+        padding-top:170px!important;
+        @media screen and (max-width:414px){
+            padding-top:167px!important;
+        }
+    }
+    .spsFooter1{
+        padding-top:170px!important;
+        @media screen and (max-width:414px){
+            padding-top:85px!important;
+        }
+    }
+    .spsFooter2{
+        padding-top:260px!important;
+        @media screen and (max-width:414px){
+            padding-top:206px!important;
+        }
+    }
+    .footerLinks{
+        text-align: right;
+        padding: 60px 0 20px;    
+        @media screen and (max-width:414px){
+            padding-top:0;
+        }
+        a{
+            color: $primaryColor;
+            text-decoration: none;
+            padding:15px 20px;
+            display: inline-block;
+            font-size: 14px;
+        }
+        a:hover{
+            color:$secondryColor;
+        }
+    }
+
+.buttbg{
+    background: linear-gradient(to right,#3DD9D4 , #39EDC2);
+    border-radius: 22px;
+    text-align: center;
+    border:none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 29px 9px;
+    transition: all 0.5s;
+    outline: none;  
+    @media screen and (max-width:414px){
+        margin-bottom: 30px;
+    }
+}
+.buttbg:hover{   
+    background: linear-gradient(to right, #52fff9, #39EDC2)
+}
+
+.loginContainer{
+    width:420px;
+    margin: 0 auto;
+    @media screen and (max-width:414px) {
+        width:320px;
+    }
+    h2{
+        font-size: 30px;
+        color: $primaryColor;
+        font-family: $secondryFont;
+        text-align: center;
+        padding-bottom: 50px;
+        @media screen and (max-width:414px) {
+            padding-bottom: 20px; 
+        }
+    }
+    .loginInput{
+        background: #fff;
+        border: none;
+        font-size: 16px;
+        color: #2A3A3B;
+        padding: 10px 16px;
+        box-shadow: 0 0 6px #e8e8e8;
+        margin-bottom: 40px;
+        width: 100%;
+        @media screen and (max-width:414px) {
+            margin-bottom: 20px; 
+        }
+    }
+    .loginTxt{
+        font-size: 14px;
+        color:$primaryColor;
+        font-family: $primaryFont;
+        display: block;
+        width:100%;
+        text-align: right;
+        padding-bottom:20px;
+        a{
+            font-family: $secondryFont; 
+            color:$primaryColor;
+        }
+        a:hover{
+            color: $secondryColor;
+        }
+    }
+    .forgotPass{
+        font-size: 14px;
+        color:$primaryColor;
+        font-family: $primaryFont;
+        display: block;
+        width:100%;
+        text-align: right;
+        a{
+            color:$primaryColor;
+        }
+        a:hover{
+            color: $secondryColor;
+        }
+    }
+    .loginButt{
+        background: linear-gradient(to right, #3DD9D4, #39EDC2);
+        border-radius: 26px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        color: #fff;
+        padding: 14px 41px 13px; 
+        transition: all 0.5s; 
+        font-family: 'robotobold'; 
+        margin-top: 70px; 
+        outline: none;  
+        @media screen and (max-width:414px) {
+            margin:40px auto 20px;
+        }         
+    }
+    .loginButt:hover{
+        background: linear-gradient(to right, #52fff9, #39EDC2)
+    }
+}
+
+.onboardContainer{
+    h2{
+        font-size: 45px;
+        color: $primaryColor;
+        font-family: $secondryFont;
+        text-align: center;        
+        line-height: 60px;
+        @media screen and (max-width:414px) {
+            font-size: 30px; 
+            line-height: 40px;
+        }
+    }
+    h3{
+        font-size: 24px;
+        color: $primaryColor;
+        font-family:$primaryFont;
+        text-align: center; 
+        padding-bottom: 40px;
+        line-height: normal;
+        span{
+            color:$secondryColor;
+        }
+        @media screen and (max-width:414px) {
+            font-size: 18px; 
+            line-height:30px;
+            padding-bottom: 18px;
+        }
+    }
+    p{
+        font-size:34px;
+        color: $primaryColor;
+        font-family:$primaryFont;
+        text-align: center;   
+        @media screen and (max-width:414px) {
+            font-size: 22px;
+            padding-bottom: 30px;           
+        }     
+    }
+    .addAccButt{
+        background: linear-gradient(to right, #3DD9D4, #39EDC2);
+        border-radius: 44px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        color: #fff;
+        padding: 22px 45px 21px;
+        transition: all 0.5s;
+        font-family: 'robotobold';
+        margin: 70px auto; 
+        outline: none;  
+        @media screen and (max-width:414px) {
+            margin: 30px auto; 
+        }        
+    }
+    .addAccButt:hover{
+        background: linear-gradient(to right, #52fff9, #39EDC2)
+    }
+    .budgetUpdate{
+        width:420px;
+        margin: 0 auto;
+        @media screen and (max-width:414px) {
+            width:100%;
+        } 
+        h4{
+            font-size: 24px;
+            color: $primaryColor;
+            font-family:$secondryFont;
+            text-align: center; 
+            padding-bottom: 15px;
+        }
+        p{
+            font-size: 14px;
+            color: $primaryColor;
+            padding-bottom: 30px;
+        }
+        .budgetInput{
+            background: #fff;
+            border: none;
+            font-size:28px;
+            color: #2A3A3B;
+            padding:5px 0;
+            box-shadow: 0 0 6px #e8e8e8;
+            margin-bottom: 40px;            
+            text-align: center;
+            width:220px;
+            display: block;
+        }
+        .updateButt{
+            background: linear-gradient(to right, #3DD9D4, #39EDC2);
+            border-radius: 26px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #fff;
+            padding: 14px 41px 13px; 
+            transition: all 0.5s; 
+            font-family: 'robotobold'; 
+            outline: none;    
+            @media screen and (max-width:414px) {
+                margin-bottom: 30px; 
+            }                
+        }
+        .updateButt:hover{
+            background: linear-gradient(to right, #52fff9, #39EDC2)
+        }
+        .leftSpa{
+            @media screen and (max-width:414px) {
+                margin-left:20px;
+            } 
+        }
+        .payOptBox{           
+            border:solid 1px #e5eeec;
+            display: block;
+            margin: 0 auto 50px;
+            border-radius:4px;
+            background: #fff;
+            @media screen and (max-width:414px) {
+                margin:0 20px 50px;
+            }
+            .payHeader{
+                display: block;
+                border-bottom:solid 1px #e5eeec;
+            }
+            .payForm{
+                padding:10px 10px 0 10px;
+                display: block;
+            }
+            label{
+                font-size: 12px;
+                color:#7d7d7d;
+            }
+            .payInput{
+                background: #fff;
+                border: none;
+                font-size: 16px;
+                color: #2A3A3B;
+                padding: 5px 10px;                
+                margin-bottom:10px;
+                width: 100%;
+                border:solid 1px #e5eeec;
+            }
+        }
+    }
+}
+
+.privacyContainer{
+    display: block;
+    padding: 50px 0;
+    span{
+        display: block;
+    }
+    p{
+        font-size: 16px;
+        color:$primaryColor;
+        font-family: $primaryFont;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+}
+
+.settingCont{
+    text-align: left!important;
+    h4{
+        text-align: left!important;
+        @media screen and (max-width:414px) {
+            text-align: center!important;
+        }
+    }
+    p{
+        text-align: left!important;
+        padding-bottom:40px!important;
+        @media screen and (max-width:414px) {
+            text-align: center!important;
+            padding-bottom:20px!important;
+        }
+    }
+    .payOptBox{
+        margin-bottom: 20px!important;
+    }
+    .budgetInput{
+        margin-bottom: 65px!important;
+        @media screen and (max-width:414px) {
+            margin:0 auto 35px!important;
+        }
+    }  
+    .updateButt{
+        @media screen and (max-width:414px) {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }  
+}
+
+.deleteAccArea{
+    display: block;
+    padding: 100px 0;
+    @media screen and (max-width:414px) {
+        padding: 30px 0;
+        text-align: center;
+    }
+    .inputBox{
+        background: #fff;
+            border:solid 1px #dcdcdc;
+            font-size:18px;
+            color: #2A3A3B;
+            padding:5px 10px;           
+            margin-bottom:20px;
+            width:300px;
+            display: block;
+            @media screen and (max-width:414px) {
+                margin: 0 auto 20px;
+            }
+    }
+    .deleteAccButt{
+        background: #fff;
+        border:solid 1px #dcdcdc;
+        border-radius: 20px;
+        text-align: center;
+        padding: 6px 25px 5px;
+        cursor: pointer;
+        font-size: 18px;
+        color:#72778A;
+        font-family: $secondryFont;
+        transition: all 0.5s;
+        outline: none;  
+    }
+    .deleteAccButt:hover{
+        background: #f3f3f3;
+    }
+}
+
+.dashBoardCont{
+    display: block;
+    .leftCont{
+        display: block;
+        padding-right: 50px;
+        @media screen and (max-width:414px) {
+            padding-right:15px;
+        }
+        h2{
+            font-size:32px;
+            color:$primaryColor;
+            margin: 0 0 30px 0;
+            font-family: $secondryFont; 
+        }
+        .infoBox{
+            display: block;
+            width:100%;
+            padding: 0;            
+            li{
+                background: #fff;
+                cursor: pointer;
+                box-shadow: 0 0 15px #e8e8e8;
+                padding: 10px 0;  
+                display: inline-block;
+                width:21.3%;
+                margin-left:2%;
+                margin-bottom:12px;
+                float:left;
+                @media screen and (max-width:414px) {
+                    width:100%;
+                    display: block;
+                    margin-left:0;
+                }
+                h4{
+                    border-bottom: solid 1px #dcdcdc;
+                    text-align: center;
+                    font-size: 13px;
+                    padding: 5px 0 15px;
+                    font-family: 'robotobold';
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                }
+                .infoImg{
+                    display: block;
+                    text-align: center;
+                    min-height: 104px;
+                }
+                .infoName{
+                    display: block;
+                    text-align: center;                    
+                    font-size: 14px;
+                    padding: 15px 0 ;
+                    font-family: "robotoblack";
+                }
+                .infoPrice{
+                    display: block;
+                    text-align: center;
+                    font-size: 28px;
+                    font-family: 'robotolight';
+                } 
+                .contTxt{
+                    font-family: 'robotolight';
+                    font-size:24px;
+                    color: #2A3A3B;
+                    display: block;
+                    text-align: center;
+                    padding: 5px 0;
+                }  
+                .contBlueTxt{
+                    color:$secondryColor;
+                }  
+                .contTxtPrice{
+                    font-size:28px;
+                }  
+                .shareButt{
+                    background: #fff;
+                    border:solid 1px #dcdcdc;
+                    border-radius: 30px;
+                    text-align: center;
+                    padding: 6px 35px 5px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    color:#72778A;
+                    font-family: $secondryFont;
+                    transition: all 0.5s;
+                    margin: 20px auto;
+                    display: block;
+                    outline: none;  
+                }
+                .shareButt:hover{
+                    background: #f3f3f3;
+                }         
+            }
+            li:nth-child(1){                
+                width:30%;
+                margin-left:0;    
+                @media screen and (max-width:414px) {
+                    width:100%;                    
+                }            
+            }
+            
+        }
+        
+        .spendingBox{
+            background: #fff;
+            box-shadow: 0 0 15px #e8e8e8;
+            padding: 10px 20px 0;   
+            clear:both;         
+            h4{
+                font: size 18px;
+                color:#72778A;                
+                font-family: $secondryFont;                
+            }
+            p{
+                font-size:14px;
+                color:#72778A;                
+                font-family:$primaryFont;
+                margin-bottom: 25px;
+                @media screen and (max-width:414px) {
+                    margin-bottom: 15px;
+                }
+                
+            }
+        .monthBudget{
+            display: block;
+            width:100%;  
+            padding:0;         
+            li{
+                display: inline-block;
+                text-align: center;
+                font-size: 14px;
+                width:7.9%;
+                @media screen and (max-width:414px) {
+                    width:15.5%;
+                }
+                .monthName{                    
+                    color:#72778A;                    
+                    display: block;                                        
+                }
+                .monthNo{                    
+                    color:#72778A;
+                    padding-bottom: 10px;
+                    display: block;
+                    border-bottom:solid 1px #dcdcdc;
+                    margin-bottom:10px;
+                }
+                .monthPrice{
+                    font-size: 12px;
+                    color:#72778A;                    
+                    display: block;  
+                    padding-bottom: 5px;                    
+                }
+                .heart{
+                    display:block;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        }
+    }
+    .rightBox{
+        background: #fff;
+        box-shadow: 0 0 15px #e8e8e8;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        @media screen and (max-width:414px) {       
+            display: block;
+            margin: 0 3.8% 10px;
+            width: 92.5%;
+        }
+        h3{
+            font-size: 18px;
+            color:$primaryColor;
+            margin: 0 0 30px 0;
+            font-family: $secondryFont;
+        }        
+        .moreButt{
+            background: #fff;
+            border:solid 1px #dcdcdc;
+            border-radius:30px;
+            text-align: center;
+            padding: 6px 35px 5px;
+            cursor: pointer;
+            font-size: 18px;
+            color:#72778A;
+            font-family: $secondryFont;
+            transition: all 0.5s;
+            margin: 10px auto;
+            display: block;
+            outline: none;  
+        }
+        .moreButt:hover{
+            background: #f3f3f3;
+        }
+        .tranList{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                display: block;
+                border-bottom: solid 1px #c5c5c5;
+                float: left;
+                width: 100%;
+                padding-bottom: 6px;
+                margin-bottom: 20px;
+                .compimg{
+                    float: left;
+                    padding-right:5px;
+                }
+                .compinfo{
+                    float:left;
+                    span{
+                        display: block;
+                        font-size: 12px;
+                        color:$primaryColor;                        
+                    }
+                    .location{
+                        background: url("images/location.png") no-repeat left top;
+                    }
+
+                }
+            }
+            
+        }
+        .modalBox{
+            .imageInfo{
+                h2{
+                    margin: 0;
+                    padding: 0;
+                }
+                p{
+                    margin: 0;
+                    padding: 5px 0;
+                    font-size: 13px;
+                }
+            }
+            input{
+                border: none;
+                box-shadow: 1px 1px 5px #ccc; 
+                padding: 10px;
+                width: 60%;
+                margin: 15px 0;
+            }
+            button{
+                border-radius: 22px;
+                background: #fff;
+                padding: 5px 30px;
+            }
+            
+            input:focus,
+            button:focus{
+                outline: none;
+            }
+            p{
+                margin: 0;
+                padding: 15px 0;
+                font-size: 15px;
+            }
+        }
+    }
+}
